@@ -3,13 +3,8 @@ const app = express()
 const port = 3000
 
 // code your routes 
-app.get('/students', (req, res) => {
-  // TODO: database fetch logic here
-  res.send({ "data": ["Tomoko", "Phillip"] })
-})
-
-app.post('/students', (req, res) => {
-  res.status(204).send({ "message": "ok" })
+app.get('/', (req, res) => {
+  res.send('Hello World!')
 })
 
 // start server
