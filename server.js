@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-const beers = [[
+const beers = [
   {
     "name": "Kirin",
     "id": "abc",
@@ -23,7 +23,7 @@ const beers = [[
     "id": "xyz",
     "abv": 15
   }
-]]
+]
 
 // code your routes 
 app.get('/beers', (req, res) => {
